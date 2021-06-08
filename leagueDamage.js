@@ -186,7 +186,7 @@ $('.updatebutton').on({
         let enemyStats = enemyStatsCombo.reduce((r, a) => a.map((b, i) => (r[i] || 0) + b), []);
 
         //sepparates values of array into unique identifiers
-        document.getElementById("myAd").innerHTML = myStats[0];
+        document.getElementById("myAdamage").innerHTML = myStats[0];
         document.getElementById("myCrit").innerHTML = myStats[1];
         document.getElementById("myLethality").innerHTML = myStats[2];
         document.getElementById("myAp").innerHTML = myStats[3];
