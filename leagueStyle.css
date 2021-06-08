@@ -1,0 +1,22 @@
+body{
+  margin: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+table {
+ 	border-collapse: collapse;
+	width: min-content;
+	color: black;
+  }
+  
+  td, th {
+	border: 1px solid black;
+	text-align: center;
+	padding: 8px;
+  }
+
+

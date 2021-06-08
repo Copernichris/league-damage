@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="leagueStyle.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="leagueDamage.js"></script>
+<title>League Stat Calculator</title>
+</head>
+<body>
+<div class="container">
+    <div>
+    <!--choose your champion-->
+    <select id="myChampSelect"></select>
+
+    <!--choose your champions level-->
+    <select id="myLevelSelect">
+        <option value="0">1</option>
+        <option value="1">2</option>
+        <option value="2">3</option>
+        <option value="3">4</option>
+        <option value="4">5</option>
+        <option value="5">6</option>
+        <option value="6">7</option>
+        <option value="7">8</option>
+        <option value="8">9</option>
+        <option value="9">10</option>
+        <option value="10">11</option>
+        <option value="11">12</option>
+        <option value="12">13</option>
+        <option value="13">14</option>
+        <option value="14">15</option>
+        <option value="15">16</option>
+        <option value="16">17</option>
+        <option value="17">18</option>
+    </select>
+    
+    
+   <!--my list of items-->
+    <br>
+    <select id="myItem1"></select> 
+    <select id="myItem2"></select> <br>
+    <select id="myItem3"></select> 
+    <select id="myItem4"></select> <br>
+    <select id="myItem5"></select> 
+    <select id="myItem6"></select> <br>
+    <br>
+
+    <table class="table">
+        <tr>
+            <th>Attack Damage</th>
+            <th>Crit</th>
+            <th>Lethality</th>
+            <th>Ability Power</th>
+            <th>Magic Penetration</th>
+            <th>Heatlth</th>
+            <th>Armor</th>
+            <th>Magic Resist</th>
+        </tr>
+        <tr>
+            <td><p id="myAd"></p></td>
+            <td><p id="myCrit"></p></td>
+            <td><p id="myLethality"></p></td>
+            <td><p id="myAp"></p></td>
+            <td><p id="myMagPen"></p></td>
+            <td><p id="myHp"></p></td>
+            <td><p id="myArmor"></p></td>
+            <td><p id="myMr"></p></td>
+        </tr>
+    </table>
+    <br>
+
+    </div>
+
+    <div>
+    <!--choose enemy champion-->
+    <select id="enemyChampSelect"></select>
+
+    <!--choose your champions level-->
+    <select id="enemyLevelSelect">
+        <option value="0">1</option>
+        <option value="1">2</option>
+        <option value="2">3</option>
+        <option value="3">4</option>
+        <option value="4">5</option>
+        <option value="5">6</option>
+        <option value="6">7</option>
+        <option value="7">8</option>
+        <option value="8">9</option>
+        <option value="9">10</option>
+        <option value="10">11</option>
+        <option value="11">12</option>
+        <option value="12">13</option>
+        <option value="13">14</option>
+        <option value="14">15</option>
+        <option value="15">16</option>
+        <option value="16">17</option>
+        <option value="17">18</option>
+    </select>
+    
+    
+   <!--my list of items-->
+    <br>
+    <select id="enemyItem1"></select> 
+    <select id="enemyItem2"></select> <br>
+    <select id="enemyItem3"></select> 
+    <select id="enemyItem4"></select> <br>
+    <select id="enemyItem5"></select> 
+    <select id="enemyItem6"></select> <br>
+    <br>             
+   
+
+    <table class="table">
+        <tr>
+            <th>Attack Damage</th>
+            <th>Crit</th>
+            <th>Lethality</th>
+            <th>Ability Power</th>
+            <th>Magic Penetration</th>
+            <th>Heatlth</th>
+            <th>Armor</th>
+            <th>Magic Resist</th>
+        </tr>
+        <tr>
+            <td><p id="enemyAd"></p></td>
+            <td><p id="enemyCrit"></p></td>
+            <td><p id="enemyLethality"></p></td>
+            <td><p id="enemyAp"></p></td>
+            <td><p id="enemyMagPen"></p></td>
+            <td><p id="enemyHp"></p></td>
+            <td><p id="enemyArmor"></p></td>
+            <td><p id="enemyMr"></p></td>
+        </tr>
+    </table>
+    </div>
+    
+</div>
+
+<button class="updatebutton">Update Stats!</button>
+ 
+</body>
+</html>
